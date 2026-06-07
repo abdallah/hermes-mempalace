@@ -1,0 +1,9 @@
+name: mempalace
+version: 1.0.0
+description: "MemPalace — local-first persistent memory via the mempalace CLI. No API key required."
+external_dependencies:
+  - name: mempalace
+    install: "pip install mempalace"
+    check: "mempalace --version"
+hooks:
+  - on_session_end
