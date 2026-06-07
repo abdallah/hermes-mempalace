@@ -12,6 +12,18 @@ A standalone Hermes memory-provider plugin that uses [MemPalace](https://github.
   - `mempalace_status`
 - stores everything under the active `HERMES_HOME`, so separate Hermes profiles stay isolated
 
+## Why use this plugin?
+
+Use MemPalace when you want memory that is:
+
+- **local-first** — no external API key required
+- **profile-scoped** — each Hermes profile gets its own palace under `HERMES_HOME`
+- **verbatim** — conversation turns are mined as-is, not flattened into opaque summaries
+- **simple to inspect** — the stored conversations and palace live on disk where you can review them directly
+- **easy for Hermes to activate** — install the repo, select `mempalace`, and verify with `hermes memory status`
+
+Compared with the memory options bundled with Hermes, MemPalace is the best fit when you want a self-contained, offline-friendly backend that behaves like a transparent personal archive. The built-in memory layer is still great for the simplest default experience, while other bundled providers may be a better match if you specifically want their own service ecosystems or cloud-backed behavior. MemPalace is the choice for users who want a local archive they can own and reason about.
+
 ## Install
 
 ### Fast path for Hermes users
