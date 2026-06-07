@@ -1,6 +1,6 @@
 # Hermes MemPalace Memory Plugin
 
-A standalone Hermes memory-provider plugin that uses [MemPalace](https://github.com/NasonZ/mempalace) for local-first, profile-scoped persistent memory.
+A standalone Hermes memory-provider plugin that uses [MemPalace](https://github.com/MemPalace/mempalace) for local-first, profile-scoped persistent memory.
 
 ## What it does
 
@@ -25,9 +25,19 @@ If the MemPalace CLI is missing, Hermes will prompt for the dependency defined i
 
 ### Manual path
 
+The MemPalace docs recommend installing the CLI with `uv`:
+
 ```bash
-pip install mempalace
+uv tool install mempalace
 ```
+
+If you prefer `pipx`, the upstream docs say that also works:
+
+```bash
+pipx install mempalace
+```
+
+Only use plain `pip install mempalace` inside an activated virtual environment when you explicitly want the importable package available.
 
 Then install the plugin repo into Hermes with your preferred plugin workflow.
 
